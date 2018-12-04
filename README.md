@@ -8,4 +8,3 @@ ChangWookJun / @changwookjun (changwookjun@gmail.com)
 Ryan S. Shin  
 Taekyoon  
 JungHyun Cho  
-
