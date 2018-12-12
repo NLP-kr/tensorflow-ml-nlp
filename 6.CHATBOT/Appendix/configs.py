@@ -8,7 +8,7 @@ tf.app.flags.DEFINE_integer('layer_size', 1, 'layer size') # 멀티 레이어 �
 tf.app.flags.DEFINE_integer('hidden_size', 128, 'weights size') # 가중치 크기
 tf.app.flags.DEFINE_float('learning_rate', 1e-3, 'learning rate') # 학습률
 tf.app.flags.DEFINE_float('teacher_forcing_rate', 0.7, 'teacher forcing rate') # 학습시 디코더 인풋 정답 지원율
-tf.app.flags.DEFINE_string('data_path', './data_in/ChatBotData.csv', 'data path') #  데이터 위치
+tf.app.flags.DEFINE_string('data_path', '../data_in/ChatBotData.csv', 'data path') #  데이터 위치
 tf.app.flags.DEFINE_string('vocabulary_path', './data_out/vocabularyData.voc', 'vocabulary path') # 사전 위치
 tf.app.flags.DEFINE_string('check_point_path', './data_out/check_point', 'check point path') # 체크 포인트 위치
 tf.app.flags.DEFINE_string('save_model_path', './data_out/model', 'save model') # 모델 저장 경로
