@@ -82,4 +82,6 @@ Paper|[Learning Phrase Representations using RNN Encoder-Decoder for Statistical
 Paper|[Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473.pdf)
 
 # Author
-ChangWookJun / @changwookjun (changwookjun@gmail.com)
+ChangWookJun / @changwookjun (changwookjun@gmail.com)  
+Taekyoon  / @taekyoon (tgchoi03@gmail.com)  
+JungHyun Cho  / @JungHyunCho (reniew1@nate.com)  
