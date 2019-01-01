@@ -5,5 +5,5 @@
 
 # Author
 ChangWookJun / @changwookjun (changwookjun@gmail.com)  
-Taekyoon  / @taekyoon (tgchoi03@gmail.com)
-JungHyun Cho  / @JungHyunCho (reniew1@nate.com)
+Taekyoon  / @taekyoon (tgchoi03@gmail.com)  
+JungHyun Cho  / @JungHyunCho (reniew1@nate.com)  
