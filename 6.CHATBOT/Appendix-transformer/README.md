@@ -1,15 +1,10 @@
-# ChatBot(seq2seq) 확장판
-NLG를 활용한 ChatBot을 개발함 (V2.0)
+# Transformer 확장판
+
 
 # 수정된 내용
-(V1.0) https://github.com/changwookjun/ChatBot_seq2seq 에 대한 수정 내용 적용
-### 1. Attention 적용
-### 2. Teacher Forcing 적용
-### 3. PAD에 대한 mask 기능을 통한 loss 제한 적용
-### 4. Serving 기능 적용
+추가
 
-
-
+이미지 적용 필요
 ![images](images/seq2seq.png)  
 
 
@@ -46,6 +41,7 @@ sklearn
    
 
 # Config
+옵션 처리 필요
 tf.app.flags.DEFINE_integer('batch_size', 64, 'batch size') # 배치 크기
 tf.app.flags.DEFINE_integer('train_steps', 10000, 'train steps') # 학습 에포크
 tf.app.flags.DEFINE_float('dropout_width', 0.8, 'dropout width') # 드롭아웃 크기
@@ -75,6 +71,7 @@ python main.py
 python predict.py 남자친구가 너무 잘 생겼어
 
 # Reference
+레퍼런스 추가 필요 
 Title|Contents
 --|--
 Data|[Chatbot data](https://github.com/songys/Chatbot_data)  
