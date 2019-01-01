@@ -1,4 +1,4 @@
-from konlpy.tag import Twitter
+from konlpy.tag import Okt
 import pandas as pd
 import tensorflow as tf
 import enum
@@ -44,7 +44,7 @@ def prepro_like_morphlized(data):
     # 형태소 분석 모듈 객체를
     # 생성합니다.
 
-    morph_analyzer = Twitter()
+    morph_analyzer = Okt()
     # 형태소 토크나이즈 결과 문장을 받을
     #  리스트를 생성합니다.
     result_data = list()
