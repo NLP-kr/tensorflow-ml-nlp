@@ -110,3 +110,4 @@ venv.bak/
 .mypy_cache/
 
 data_in_test/
+sh/
