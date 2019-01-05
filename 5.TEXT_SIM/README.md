@@ -1,4 +1,4 @@
-# 5. 텍스트 
+# 5. 텍스트 유사도
 
 ## QuoraQuestionPairs (Link 정리 해서 공유)
 
