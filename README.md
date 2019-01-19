@@ -23,6 +23,11 @@
 pip install -r requirements.txt
 ```
 
+만약 설치가 정상적으로 진행되지 않으신다면 python 3.6을 설치하여 진행해주시기 바랍니다.
+```
+conda install python=3.6
+```
+
 ## 목차 (Table of Contents)
 
 **준비 단계** - 자연어 처리에 대한 배경과 개발에 대한 준비를 위한 챕터입니다.
