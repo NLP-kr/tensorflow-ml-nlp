@@ -1,0 +1,13 @@
+tensorflow>=0.10
+sklearn
+pandas
+matplotlib
+bs4
+html5lib
+wordcloud
+seaborn
+nltk
+gensim
+konlpy
+xgboost
+tqdm
