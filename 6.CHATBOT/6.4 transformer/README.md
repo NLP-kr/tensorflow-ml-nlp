@@ -36,6 +36,7 @@ sklearn
    
 
 # Config
+```
 tf.app.flags.DEFINE_integer('batch_size', 64, 'batch size')  # 배치 크기
 tf.app.flags.DEFINE_integer('train_steps', 20000, 'train steps')  # 학습 에포크
 tf.app.flags.DEFINE_float('dropout_width', 0.5, 'dropout width')  # 드롭아웃 크기
@@ -52,6 +53,7 @@ tf.app.flags.DEFINE_string('vocabulary_path', './data_out/vocabularyData.voc', '
 tf.app.flags.DEFINE_string('check_point_path', './data_out/check_point', 'check point path')  # 체크 포인트 위치
 tf.app.flags.DEFINE_boolean('tokenize_as_morph', False, 'set morph tokenize')  # 형태소에 따른 토크나이징 사용 유무
 tf.app.flags.DEFINE_boolean('xavier_initializer', True, 'set xavier initializer')  # 형태소에 따른 토크나이징 사용 유무  
+```
 
 # Usage
 python main.py
