@@ -36,6 +36,7 @@ sklearn
    
 
 # Config
+```
 tf.app.flags.DEFINE_integer('batchSize', 100, 'batch size') # 배치 크기  
 tf.app.flags.DEFINE_integer('trainSteps', 10000, 'train steps') # 학습 에포크  
 tf.app.flags.DEFINE_float('dropoutWidth', 0.5, 'dropout width') # 드롭아웃 크기  
@@ -51,6 +52,7 @@ tf.app.flags.DEFINE_integer('embeddingSize', 128, 'embedding size') # 임베딩 
 tf.app.flags.DEFINE_boolean('tokenizeAsMorph', True, 'set morph tokenize') # 형태소에 따른 토크나이징 사용 유무  
 tf.app.flags.DEFINE_boolean('embedding', True, 'Use Embedding flag') # 임베딩 유무 설정  
 tf.app.flags.DEFINE_boolean('multilayer', True, 'Use Multi RNN Cell') # 멀티 RNN 유무  
+```
 
 # Usage
 python main.py
