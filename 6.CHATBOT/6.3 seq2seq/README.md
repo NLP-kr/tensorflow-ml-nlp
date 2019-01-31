@@ -67,5 +67,7 @@ Data|[Chatbot data](https://github.com/songys/Chatbot_data)
 Paper|[Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation](https://arxiv.org/pdf/1406.1078.pdf)  
 Paper|[Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473.pdf)
 
+<!--
 # Author
 ChangWookJun / @changwookjun (changwookjun@gmail.com)
+-->
