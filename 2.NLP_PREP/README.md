@@ -20,7 +20,7 @@
 
 - [맷플롯립(Matplotlib)](./2.4.3.matplotlib.ipynb)
 
-- [정규표현식 및 뷰티풀숩(Re & BeautifulSoup)](./2.4.4&5.re_and_beautiful_soup.ipynb)
+- [정규표현식 및 BeautifulSoup(Re & BeautifulSoup)](./2.4.4&5.re_and_beautiful_soup.ipynb)
 
 
 이미 위의 라이브러리들을 숙지하시고 계신 분들은 이 장을 생략하셔도 됩니다.
