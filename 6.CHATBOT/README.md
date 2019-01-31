@@ -16,7 +16,7 @@
 
 - [RNN 기반의 Seq2Seq 모델](./6.3%20seq2seq)
 
-- [Transformer 기반의 Seq2Seq 모델](./6.4520transformer)
+- [Transformer 기반의 Seq2Seq 모델](./6.4%20transformer)
 
 
 ## 부록
