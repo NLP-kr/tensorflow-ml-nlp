@@ -8,7 +8,7 @@ Chatbot_data_for_Korean v1.0
 2. 일상다반서 0, 이별(부정) 1, 사랑(긍정) 2로 레이블링                
                       
                      
-## Quick peek.                
-
+## 한글 폰트.  
+NanumGothic.ttf
 
 
