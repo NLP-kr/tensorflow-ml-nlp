@@ -4,6 +4,7 @@
 <p align="center">
   <img src="main.png" width="400" height="600" /> 
 </p>
+
 ## 소개 (Introduction)
 
 책에 수록된 자연어 처리 예제들을 모아놓은 리파지토리입니다.
