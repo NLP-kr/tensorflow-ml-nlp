@@ -19,11 +19,11 @@
 - [Transformer 기반의 Seq2Seq 모델](./6.4520transformer)
 
 
+## 부록
+
 추가로 실제로 여러분들이 보다 좋은 성능으로 활용할 수 있는 챗봇 모델을 제공하기 위해 발전된 모델을 구현해 뒀습니다.
 
 이는 부록에서 확인해주시면 됩니다.
-
-## 부록
 
 - [Attention Based RNN Seq2Seq 모델](./Appendix)
 
