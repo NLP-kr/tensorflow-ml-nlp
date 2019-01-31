@@ -67,5 +67,7 @@ Title|Contents
 Data|[Chatbot data](https://github.com/songys/Chatbot_data)  
 Paper|[Attention is all you need](https://arxiv.org/abs/1706.03762)
 
+<!--
 # Author
 Taekyoon Choi / @taekyoonchoi (tgchoi03@gmail.com)
+-->
