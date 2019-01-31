@@ -46,6 +46,7 @@ sklearn
    
 
 # Config
+```
 tf.app.flags.DEFINE_integer('batch_size', 64, 'batch size') # 배치 크기
 tf.app.flags.DEFINE_integer('train_steps', 10000, 'train steps') # 학습 에포크
 tf.app.flags.DEFINE_float('dropout_width', 0.8, 'dropout width') # 드롭아웃 크기
@@ -67,6 +68,7 @@ tf.app.flags.DEFINE_boolean('teacher_forcing', True, 'Use Teacher Forcing') # �
 tf.app.flags.DEFINE_boolean('tokenize_as_morph', True, 'set morph tokenize') # 형태소에 따른 토크나이징 사용 유무
 tf.app.flags.DEFINE_boolean('serving', False, 'Use Serving') #  서빙 기능 지원 여부
 tf.app.flags.DEFINE_boolean('loss_mask', False, 'Use loss mask') # PAD에 대한 마스크를 통한 loss를 제한 
+```
 
 # Usage
 python main.py
@@ -81,7 +83,9 @@ Data|[Chatbot data](https://github.com/songys/Chatbot_data)
 Paper|[Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation](https://arxiv.org/pdf/1406.1078.pdf)  
 Paper|[Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473.pdf)
 
+<!--
 # Author
 ChangWookJun / @changwookjun (changwookjun@gmail.com)  
 Taekyoon  / @taekyoon (tgchoi03@gmail.com)  
 JungHyun Cho  / @JungHyunCho (reniew1@nate.com)  
+-->
