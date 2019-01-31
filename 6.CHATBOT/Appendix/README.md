@@ -2,7 +2,6 @@
 NLG를 활용한 ChatBot을 개발함 (V2.0)
 
 # 수정된 내용
-(V1.0) https://github.com/changwookjun/ChatBot_seq2seq 에 대한 수정 내용 적용
 ### 1. Attention 적용
 ### 2. Teacher Forcing 적용
 ### 3. PAD에 대한 mask 기능을 통한 loss 제한 적용
