@@ -2,10 +2,12 @@
 
 
 # 수정된 내용
-추가
+1. 모든 시퀀스 생성을 한 연산 그래프 안에서 하도록 수정했습니다.
 
-이미지 적용 필요
-![images](images/seq2seq.png)  
+2. 모델 구현에 대해서 tf.keras.Model로 모듈화하여 구현했습니다.
+
+
+![images](../6.4%20transformer/images/transformer.png)  
 
 
 # Learning Data
@@ -41,28 +43,24 @@ sklearn
    
 
 # Config
-옵션 처리 필요
-tf.app.flags.DEFINE_integer('batch_size', 64, 'batch size') # 배치 크기
-tf.app.flags.DEFINE_integer('train_steps', 10000, 'train steps') # 학습 에포크
-tf.app.flags.DEFINE_float('dropout_width', 0.8, 'dropout width') # 드롭아웃 크기
-tf.app.flags.DEFINE_integer('layer_size', 1, 'layer size') # 멀티 레이어 크기 (multi rnn)
-tf.app.flags.DEFINE_integer('hidden_size', 128, 'weights size') # 가중치 크기
-tf.app.flags.DEFINE_float('learning_rate', 1e-3, 'learning rate') # 학습률
-tf.app.flags.DEFINE_float('teacher_forcing_rate', 0.7, 'teacher forcing rate') # 학습시 디코더 인풋 정답 지원율
-tf.app.flags.DEFINE_string('data_path', './data_in/ChatBotData.csv', 'data path') #  데이터 위치
-tf.app.flags.DEFINE_string('vocabulary_path', './data_out/vocabularyData.voc', 'vocabulary path') # 사전 위치
-tf.app.flags.DEFINE_string('check_point_path', './data_out/check_point', 'check point path') # 체크 포인트 위치
-tf.app.flags.DEFINE_string('save_model_path', './data_out/model', 'save model') # 모델 저장 경로
-tf.app.flags.DEFINE_integer('shuffle_seek', 1000, 'shuffle random seek') # 셔플 시드값
-tf.app.flags.DEFINE_integer('max_sequence_length', 25, 'max sequence length') # 시퀀스 길이
-tf.app.flags.DEFINE_integer('embedding_size', 128, 'embedding size') # 임베딩 크기
-tf.app.flags.DEFINE_boolean('embedding', True, 'Use Embedding flag') # 임베딩 유무 설정
-tf.app.flags.DEFINE_boolean('multilayer', True, 'Use Multi RNN Cell') # 멀티 RNN 유무
-tf.app.flags.DEFINE_boolean('attention', True, 'Use Attention') #  어텐션 사용 유무
-tf.app.flags.DEFINE_boolean('teacher_forcing', True, 'Use Teacher Forcing') # 학습시 디코더 인풋 정답 지원 유무
-tf.app.flags.DEFINE_boolean('tokenize_as_morph', True, 'set morph tokenize') # 형태소에 따른 토크나이징 사용 유무
-tf.app.flags.DEFINE_boolean('serving', False, 'Use Serving') #  서빙 기능 지원 여부
-tf.app.flags.DEFINE_boolean('loss_mask', False, 'Use loss mask') # PAD에 대한 마스크를 통한 loss를 제한 
+```
+tf.app.flags.DEFINE_integer('batch_size', 64, 'batch size')  # 배치 크기
+tf.app.flags.DEFINE_integer('train_steps', 20000, 'train steps')  # 학습 에포크
+tf.app.flags.DEFINE_float('dropout_width', 0.5, 'dropout width')  # 드롭아웃 크기
+tf.app.flags.DEFINE_integer('embedding_size', 128, 'embedding size')  # 임베딩 크기 
+tf.app.flags.DEFINE_float('learning_rate', 1e-3, 'learning rate')  # 학습률
+tf.app.flags.DEFINE_integer('shuffle_seek', 1000, 'shuffle random seek')  # 셔플 시드값
+tf.app.flags.DEFINE_integer('max_sequence_length', 25, 'max sequence length')  # 시퀀스 길이
+tf.app.flags.DEFINE_integer('model_hidden_size', 128, 'model weights size')  # 모델 가중치 크기
+tf.app.flags.DEFINE_integer('ffn_hidden_size', 512, 'ffn weights size')  # ffn 가중치 크기
+tf.app.flags.DEFINE_integer('attention_head_size', 4, 'attn head size')  # 멀티 헤드 크기
+tf.app.flags.DEFINE_integer('layer_size', 2, 'layer size')  # 논문은 6개 레이어이나 2개 사용 학습 속도 및 성능 튜닝
+tf.app.flags.DEFINE_string('data_path', '../data_in/ChatBotData.csv', 'data path')  # 데이터 위치
+tf.app.flags.DEFINE_string('vocabulary_path', './data_out/vocabularyData.voc', 'vocabulary path')  # 사전 위치
+tf.app.flags.DEFINE_string('check_point_path', './data_out/check_point', 'check point path')  # 체크 포인트 위치
+tf.app.flags.DEFINE_boolean('tokenize_as_morph', False, 'set morph tokenize')  # 형태소에 따른 토크나이징 사용 유무
+tf.app.flags.DEFINE_boolean('xavier_initializer', True, 'set xavier initializer')  # 형태소에 따른 토크나이징 사용 유무 
+```
 
 # Usage
 python main.py
@@ -71,14 +69,8 @@ python main.py
 python predict.py 남자친구가 너무 잘 생겼어
 
 # Reference
-레퍼런스 추가 필요 
+
 Title|Contents
 --|--
 Data|[Chatbot data](https://github.com/songys/Chatbot_data)  
-Paper|[Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation](https://arxiv.org/pdf/1406.1078.pdf)  
-Paper|[Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473.pdf)
-
-# Author
-ChangWookJun / @changwookjun (changwookjun@gmail.com)  
-Taekyoon  / @taekyoon (tgchoi03@gmail.com)  
-JungHyun Cho  / @JungHyunCho (reniew1@nate.com)  
+Paper|[Attention is all you need](https://arxiv.org/abs/1706.03762)
