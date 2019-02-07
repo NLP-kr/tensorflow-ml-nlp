@@ -2,7 +2,7 @@
 
 텐서플로우와 머신러닝으로 시작하는 자연어처리(로지스틱회귀회귀부터 트렌스포머 챗봇까지)  
 <p align="center">
-  <img src="main.png" width="400" height="600" /> 
+  <img src="main.png" width="350" height="500" /> 
 </p>
 
 ## 소개 (Introduction)
