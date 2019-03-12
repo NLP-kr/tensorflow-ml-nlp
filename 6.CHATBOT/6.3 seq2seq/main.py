@@ -32,7 +32,7 @@ def main(self):
 
 	# 에스티메이터 구성한다.
     classifier = tf.estimator.Estimator(
-            model_fn=ml.Model, # 모델 등록한다.
+            model_fn=ml.model, # 모델 등록한다.
             model_dir=DEFINES.check_point_path, 
             params={
                 'hidden_size': DEFINES.hidden_size, 
