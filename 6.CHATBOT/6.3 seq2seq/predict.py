@@ -27,7 +27,7 @@ if __name__ == '__main__':
 
 	# 에스티메이터 구성
     classifier = tf.estimator.Estimator(
-            model_fn=ml.Model,
+            model_fn=ml.model,
             model_dir=DEFINES.check_point_path, 
             params={ 
                 'hidden_size': DEFINES.hidden_size, 
