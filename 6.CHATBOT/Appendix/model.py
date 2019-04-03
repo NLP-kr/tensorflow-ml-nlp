@@ -134,13 +134,13 @@ def Model(features, labels, mode, params):
                             True,
                             tf.random_uniform(shape=(), maxval=1) <= params['teacher_forcing_rate'] # 률에 따른 labels값 지원 유무
                         ),
-                        lambda: tf.nn.embedding_lookup(embedding_encoder, labels[:, i-1]),  # labels 정답을 넣어주고 있다.
-                        lambda: tf.nn.embedding_lookup(embedding_encoder, output_token) # 모델이 정답이라고 생각 하는 값
+                        lambda: tf.nn.embedding_lookup(embedding_decoder, labels[:, i-1]),  # labels 정답을 넣어주고 있다.
+                        lambda: tf.nn.embedding_lookup(embedding_decoder, output_token) # 모델이 정답이라고 생각 하는 값
                     )
                 else:
-                    input_token_emb = tf.nn.embedding_lookup(embedding_encoder, output_token) # 모델이 정답이라고 생각 하는 값
+                    input_token_emb = tf.nn.embedding_lookup(embedding_decoder, output_token) # 모델이 정답이라고 생각 하는 값
             else: # 평가 및 예측은 여기를 진행해야 한다. 
-                input_token_emb = tf.nn.embedding_lookup(embedding_encoder, output_token)
+                input_token_emb = tf.nn.embedding_lookup(embedding_decoder, output_token)
 
             # 어텐션 적용 부분
             if params['attention'] == True:
