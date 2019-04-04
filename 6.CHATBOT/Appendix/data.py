@@ -17,7 +17,7 @@ FILTERS = "([~.,!?\"':;)(])"
 PAD = "<PADDING>"
 STD = "<START>"
 END = "<END>"
-UNK = "<UNKNWON>"
+UNK = "<UNKNOWN>"
 
 PAD_INDEX = 0
 STD_INDEX = 1
@@ -301,7 +301,7 @@ def load_vocabulary():
             # PAD = "<PADDING>"
             # STD = "<START>"
             # END = "<END>"
-            # UNK = "<UNKNWON>"     
+            # UNK = "<UNKNOWN>"     
             words[:0] = MARKER
         # 사전을 리스트로 만들었으니 이 내용을 
         # 사전 파일을 만들어 넣는다.
