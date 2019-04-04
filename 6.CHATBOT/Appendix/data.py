@@ -305,7 +305,7 @@ def load_vocabulary():
             words[:0] = MARKER
         # 사전을 리스트로 만들었으니 이 내용을 
         # 사전 파일을 만들어 넣는다.
-        with open(DEFINES.vocabulary_path, 'w') as vocabulary_file:
+        with open(DEFINES.vocabulary_path, 'w', encoding='utf-8') as vocabulary_file:
             for word in words:
                 vocabulary_file.write(word + '\n')
 
