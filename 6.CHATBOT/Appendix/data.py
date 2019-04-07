@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from konlpy.tag import Okt
 import pandas as pd
 import tensorflow as tf
