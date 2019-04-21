@@ -29,6 +29,15 @@ pip install -r requirements.txt
 ```
 conda install python=3.6
 ```
+#### GPU 사용 시 CUDA 설치 관련
+
+- GPU를 사용하는 경우에는 텐서플로우와 호환이 되는 CUDA Version을 맞춰 설치해야 합니다.
+- 현재 본 프로젝트는 `tensorflow>=1.10` 버전에서 실행이 가능하도록 구현하였습니다.
+- `tensorflow==2.0`에 대해서는 아직 되어있지 않습니다.
+
+>> - `tensorflow-gpu>=1.13` 의 경우 `CUDA 10.0`을 설치해주시기 바랍니다.
+>> - `tensorflow-gpu>=1.5,<=1.12` 의 경우 `CUDA 9.0`을 설치해주시기 바랍니다.
+>> - `tensorflow-gpu>=1.0,<=1.4` 의 경우 `CUDA 8.0`을 설치해주시기 바랍니다.
 
 ## 목차 (Table of Contents)
 
