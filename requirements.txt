@@ -1,4 +1,4 @@
-tensorflow>=0.10
+tensorflow>=1.10
 sklearn
 pandas
 matplotlib
