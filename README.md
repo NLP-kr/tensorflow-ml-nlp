@@ -61,6 +61,7 @@ conda install python=3.6
 [Pull Request](https://github.com/NLP-kr/tensorflow-ml-nlp/pulls)는 언제든 환영입니다.
 문제나 버그, 혹은 궁금한 사항이 있으면 [이슈](https://github.com/NLP-kr/tensorflow-ml-nlp/issues)에 글을 남겨주세요.
 
+**이슈를 확인하기 전에 Wiki에 도큐먼트 먼저 보시고 이슈에 글을 남겨주세요!
 
 ## 저자 (Authors)
 ChangWookJun / @changwookjun (changwookjun@gmail.com)  
