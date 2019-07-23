@@ -45,7 +45,7 @@ class MultiHeadAttention(tf.keras.Model):
         self.value_dense = tf.keras.layers.Dense(num_units, activation=tf.nn.relu)
 
     def scaled_dot_product_attention(self, query, key, value, masked=False):
-        key_seq_length = float(key.get_shape().as_list()[-2])
+        key_seq_length = float(key.get_shape().as_list()[-1])
         key = tf.transpose(key, perm=[0, 2, 1])
         outputs = tf.matmul(query, key) / tf.sqrt(key_seq_length)
 
