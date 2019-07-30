@@ -8,7 +8,7 @@ from configs import DEFINES
 def make_lstm_cell(mode, hiddenSize, index):
     cell = tf.nn.rnn_cell.BasicLSTMCell(hiddenSize, name="lstm" + str(index), state_is_tuple=False)
     if mode == tf.estimator.ModeKeys.TRAIN:
-        cell = tf.contrib.rnn.DropoutWrapper(cell, output_keep_prob=DEFINES.dropout_width)
+        cell = tf.contrib.rnn.DropoutWrapper(cell, state_keep_prob=DEFINES.dropout_width)
     return cell
 
 # 에스티메이터 모델 부분이다.
