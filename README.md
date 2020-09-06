@@ -1,4 +1,5 @@
 **텐서플로우와 머신러닝으로 시작하는 자연어처리 개정판이 나왔습니다. 개정판은 아래 링크를 참고해주시기 바랍니다.** 
+
 **개정판 링크: https://github.com/NLP-kr/tensorflow-ml-nlp-tf2**
 
 # NLPBOOK
